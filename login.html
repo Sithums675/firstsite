@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function display()
+            {
+               alert("LOGIN SUCESSFULLY");
+            }
+        </script>
+        <body>
+            <style>
+                BODY{
+                    
+                    margin: 0;
+                    padding: 0;
+                    font-family: sans-serif;
+                    background: #000000;
+                    color: aliceblue;
+                }
+                
+                .box{
+                    width: 25%;
+                    padding: 2%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: rgb(255, 255, 255);
+                    transform: translate(-50%,-50%);
+                    background: #000000;
+                    text-align: center;
+                    border-radius: 20em;
+                    border-style: dashed;
+                    border-color: rgb(182, 53, 53);
+                    border-width: 20px;
+                    box-shadow: 5px 5px 50px 50px rgb(71, 220, 48);
+                    animation: animateb 4s linear infinite;
+                    transition: all .2s linear;
+                }
+                
+                .box input{
+                    border: 0;
+                    background: none;
+                    display: block;
+                    margin: 20px auto;
+                    text-align: center;
+                    border: 3px solid #fd0303;
+                    padding: 14px 10px;
+                    width: 200px;
+                    outline: none;
+                    color: rgb(255, 255, 255);
+                    border-radius: 24px;
+                    transition: 0.25s;
+                    
+                }
+                h1{
+                    border: 5;
+                    background: #292929;
+                    display: block;
+                    margin: 20px auto;
+                    text-align: center;
+                    border: 3px solid #000000;
+                    padding: 14px 10px;
+                    width: 300px;
+                    outline: none;
+                    color: rgb(255, 255, 255);
+                    border-radius: 24px;
+                    transition: 0.2s;
+                    cursor: pointer;
+                }
+                .box input[type="text"]:focus,.box input[type="password"]:focus{
+                    width:280px;
+                    border-color: #04fb6b;
+                }
+                .box input [type="submit"]{
+                    border: 0;
+                    background: none;
+                    display: block;
+                    margin: 20px auto;
+                    text-align: center;
+                    font-size: 100%;
+                    border: 3px solid #0399fd;
+                    padding: 14px 10px;
+                    outline: none;
+                    color: white;
+                    border-radius: 24px;
+                    transition: 0.25s;
+                    cursor: pointer;
+                }
+                .box input,a[type="submit"]:hover{
+                    background: #04fb6b;
+                }
+                @keyframes animateb{
+                    100%{
+                        filter: hue-rotate(360deg);
+                    }
+                    
+                }
+                a{
+                    border: 0;
+                    background: none;
+                    display: block;
+                    margin: 20px auto;
+                    text-align: center;
+                    font-size: 100%;
+                    border: 3px solid #0399fd;
+                    padding: 14px 10px;
+                    outline: none;
+                    color: white;
+                    border-radius: 24px;
+                    transition: 0.25s;
+                    cursor: pointer;
+                    
+                    padding: 14px 10px;
+                    width: 200px;
+                    outline: none;
+                    color: rgb(255, 255, 255);
+                    border-radius: 24px;
+                    transition: 0.25s;
+                    
+                }
+            </style>
+<img src="SSMLOGO.png" alt=New Volume(D:)"WIDTH="180"HEIGHT="180">
+    <form class="box" action="login.html" method="post">
+        <h1>LOGIN PAGE</h1>
+        <input type="text" name=""placeholder="username">
+        <input type="password" name=""placeholder="password">
+        <input type="submit" onclick="display()"value="SUBMIT"/>
+        <a href="index.html">RETURN HOME</a><br>
+        </form>
+</body>
+</head>
+</html>

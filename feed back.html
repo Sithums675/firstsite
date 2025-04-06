@@ -1,0 +1,104 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: rgb(44, 0, 0);
+animation: animatebg 1s linear infinite;
+}
+@keyframes animatebg{
+                    100%{
+                        filter: hue-rotate(360deg);
+                    }
+}
+H3{
+font-family: Magneto, sans-serif;
+background: #00e1ff;
+animation: animatebg 1s linear infinite;
+}
+@keyframes animatebg{
+                    100%{
+                        filter: hue-rotate(360deg);
+                    }
+}
+button{
+font-family: Arial Black,bold;
+background: #00e1ff;
+animation: animatebg 1s linear infinite;
+background-color: #11e518;
+color: white;
+padding: 8px 12px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+@keyframes animatebg{
+                    100%{
+                        filter: hue-rotate(360deg);
+                    }
+}
+input[type=text], select, textarea {
+width: 100%;
+padding: 8px;
+border: 1px solid #3b3939;
+border-radius: 4px;
+margin-top: 4px;
+margin-bottom: 10px;
+}
+input[type=submit] {
+background-color: #11e518;
+color: white;
+padding: 8px 12px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+.container {
+width: 80%;
+max-width: 500px;
+margin: 0 auto;
+border-radius: 6px;
+background-color: #626262;
+padding: 20px;
+}
+h3 {
+text-align: center;
+}
+button {
+text-align: center;
+}
+label {
+font-weight: bold;
+}
+textarea {
+resize: vertical;
+}
+/* Optional: Add additional styles to make it more visually appealing */
+.container {
+box-shadow: 0 2px 4px rgba(197, 187, 187, 0.1);
+}
+input[type=submit]:hover {
+background-color: #00ff0d;
+}
+</style>
+</head>
+<body>
+<h3>We Value Your Suggestions!</h3>
+<div class="container">
+<form>
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="firstname" placeholder="Enter your name">
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+<label for="email">Email</label>
+<input type="text" id="email" name="email" placeholder="Enter your email here">
+<label for="subject">Suggestion</label>
+<textarea id="subject" name="subject" placeholder="Provide your suggestion" style="height: 100px"></textarea>
+<input type="submit" value="Submit"><br>
+<li></li><button><a href="index.html">back</a></button>
+</form>
+</div>
+<marquee BEHAVIOR="ALTERNATE" SCROLLAMOUNT="10"><img src="SSMLOGO.png" alt=New Volume(D:)"WIDTH="150"HEIGHT="150"></marquee>
+</body>
+</html>
